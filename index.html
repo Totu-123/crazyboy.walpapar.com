@@ -1,0 +1,128 @@
+
+  <DOCTYPE HTML>
+  <html lang="en">
+    
+    <head>
+      <meta charset="utf-8"/>
+      
+      <title> examble website</title>
+      <link rel="stylesheet" href="./style.css"/>
+       
+    </head>
+    
+    <body>
+      
+      <header>
+        <div class="container">
+          
+
+<div class="dropdown">
+  <button onclick="myFunction()" class="dropbtn">menu</button>
+  <div id="myDropdown" class="dropdown-content">
+    <nav>
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
+    <a href="welcome.html">walpaper</a>
+    </nav>
+  </div>
+</div>
+<a href="#home">home</a>
+      </div>
+        </header>
+
+
+<script>
+
+function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+</script>
+          
+      
+             
+            
+          
+          
+               
+
+        
+       
+        
+        
+        
+       
+    
+        <main>
+          <section class="banner-container">
+            <div class="container">
+            <div class="left-section">
+              <h1>welcome to example web</h1>
+              <p>this is just example webpage</p>
+               <form action="Login.HTML" method="">
+              <button>login</button>
+              </div>
+              </form>
+              <div class="right-section">
+                <h4>please fill this form</h4>
+               
+                <form action="welcome.html" method="">
+                  
+                  <div class="input-group">
+                    <input type="text" id="name" value="zaay"required/>
+                    <label for="name">Name</label>
+                    </div>
+                     
+                  <div class="input-group">
+                    <input type="email" id="email" value="zayanolakara127@gmail.com" required/>
+                    <label for="email">email</label>
+                    </div>
+                    <div class="input-group">
+                      <br>
+                     <input type="password"  id="password" value="zaay">
+                     <label for="password">password </label>
+                     <br><br>
+    <div class="checkbox">              
+<input type ="checkbox" onclick="mypass()" >
+ <label for="checkbox">show password</label>
+
+</div>
+<script>
+function mypass() {
+  var x = document.getElementById("password");
+  if (x.type === "password") {
+    x.type = "text";
+  } else {
+    x.type = "password";
+  }
+}
+</script>
+
+                  </div>
+                  
+                  <div class="submit-section">
+                  <input type="submit" class="submit-button"/>
+                  
+                  </div>
+                </form>
+                </div>
+                </div>
+          </section>
+          
+        </main>
+        
+    </body>
+  </html>
